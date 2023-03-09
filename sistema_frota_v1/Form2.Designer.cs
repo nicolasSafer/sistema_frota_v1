@@ -155,25 +155,25 @@
             // toolStripMenuItem83
             // 
             this.toolStripMenuItem83.Name = "toolStripMenuItem83";
-            this.toolStripMenuItem83.Size = new System.Drawing.Size(171, 22);
+            this.toolStripMenuItem83.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem83.Text = "cadastrar gestor";
             // 
             // toolStripMenuItem84
             // 
             this.toolStripMenuItem84.Name = "toolStripMenuItem84";
-            this.toolStripMenuItem84.Size = new System.Drawing.Size(171, 22);
+            this.toolStripMenuItem84.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem84.Text = "vincular gestor";
             // 
             // toolStripMenuItem85
             // 
             this.toolStripMenuItem85.Name = "toolStripMenuItem85";
-            this.toolStripMenuItem85.Size = new System.Drawing.Size(171, 22);
+            this.toolStripMenuItem85.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem85.Text = "gestores";
             // 
             // toolStripMenuItem86
             // 
             this.toolStripMenuItem86.Name = "toolStripMenuItem86";
-            this.toolStripMenuItem86.Size = new System.Drawing.Size(171, 22);
+            this.toolStripMenuItem86.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem86.Text = "grupos/secretarias";
             // 
             // toolStripMenuItem87
@@ -287,7 +287,7 @@
             this.toolStripMenuItem106,
             this.toolStripMenuItem107});
             this.toolStripMenuItem101.Name = "toolStripMenuItem101";
-            this.toolStripMenuItem101.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem101.Size = new System.Drawing.Size(166, 22);
             this.toolStripMenuItem101.Text = "ordens de serviço";
             // 
             // toolStripMenuItem102
@@ -334,7 +334,7 @@
             this.toolStripMenuItem111,
             this.toolStripMenuItem112});
             this.toolStripMenuItem108.Name = "toolStripMenuItem108";
-            this.toolStripMenuItem108.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem108.Size = new System.Drawing.Size(166, 22);
             this.toolStripMenuItem108.Text = "credenciamento";
             // 
             // toolStripMenuItem109
@@ -369,7 +369,7 @@
             this.toolStripMenuItem116,
             this.toolStripMenuItem117});
             this.toolStripMenuItem113.Name = "toolStripMenuItem113";
-            this.toolStripMenuItem113.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem113.Size = new System.Drawing.Size(166, 22);
             this.toolStripMenuItem113.Text = "administrador";
             // 
             // toolStripMenuItem114
@@ -408,19 +408,19 @@
             // toolStripMenuItem119
             // 
             this.toolStripMenuItem119.Name = "toolStripMenuItem119";
-            this.toolStripMenuItem119.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem119.Size = new System.Drawing.Size(161, 22);
             this.toolStripMenuItem119.Text = "recuperar  senha";
             // 
             // toolStripMenuItem120
             // 
             this.toolStripMenuItem120.Name = "toolStripMenuItem120";
-            this.toolStripMenuItem120.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem120.Size = new System.Drawing.Size(161, 22);
             this.toolStripMenuItem120.Text = "fedback";
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Location = new System.Drawing.Point(-42, 138);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(893, 50);
             this.pictureBox2.TabIndex = 9;
