@@ -73,20 +73,26 @@
             this.toolStripMenuItem118 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem119 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem120 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.financeiroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ordensParaFaturaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ordensFaturadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cancelamentoOrdensIntegradasAoFinanceiroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consulta = new System.Windows.Forms.TabPage();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-9, 75);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 66);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(912, 438);
+            this.pictureBox1.Size = new System.Drawing.Size(912, 450);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -109,7 +115,7 @@
             this.menuStrip3.Location = new System.Drawing.Point(0, 48);
             this.menuStrip3.Name = "menuStrip3";
             this.menuStrip3.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip3.Size = new System.Drawing.Size(893, 24);
+            this.menuStrip3.Size = new System.Drawing.Size(893, 34);
             this.menuStrip3.TabIndex = 8;
             this.menuStrip3.Text = "menuStrip3";
             // 
@@ -120,7 +126,7 @@
             this.toolStripMenuItem87,
             this.toolStripMenuItem96});
             this.toolStripMenuItem81.Name = "toolStripMenuItem81";
-            this.toolStripMenuItem81.Size = new System.Drawing.Size(120, 20);
+            this.toolStripMenuItem81.Size = new System.Drawing.Size(120, 30);
             this.toolStripMenuItem81.Text = "Empresa/Prefeitura";
             this.toolStripMenuItem81.Click += new System.EventHandler(this.toolStripMenuItem81_Click);
             // 
@@ -255,9 +261,10 @@
             this.toolStripMenuItem100.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem101,
             this.toolStripMenuItem108,
-            this.toolStripMenuItem113});
+            this.toolStripMenuItem113,
+            this.financeiroToolStripMenuItem});
             this.toolStripMenuItem100.Name = "toolStripMenuItem100";
-            this.toolStripMenuItem100.Size = new System.Drawing.Size(86, 20);
+            this.toolStripMenuItem100.Size = new System.Drawing.Size(86, 30);
             this.toolStripMenuItem100.Text = "Manutenção";
             // 
             // toolStripMenuItem101
@@ -323,25 +330,25 @@
             // toolStripMenuItem109
             // 
             this.toolStripMenuItem109.Name = "toolStripMenuItem109";
-            this.toolStripMenuItem109.Size = new System.Drawing.Size(154, 22);
+            this.toolStripMenuItem109.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem109.Text = "fornecedores";
             // 
             // toolStripMenuItem110
             // 
             this.toolStripMenuItem110.Name = "toolStripMenuItem110";
-            this.toolStripMenuItem110.Size = new System.Drawing.Size(154, 22);
+            this.toolStripMenuItem110.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem110.Text = "cadastrar";
             // 
             // toolStripMenuItem111
             // 
             this.toolStripMenuItem111.Name = "toolStripMenuItem111";
-            this.toolStripMenuItem111.Size = new System.Drawing.Size(154, 22);
+            this.toolStripMenuItem111.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem111.Text = "polos regionais";
             // 
             // toolStripMenuItem112
             // 
             this.toolStripMenuItem112.Name = "toolStripMenuItem112";
-            this.toolStripMenuItem112.Size = new System.Drawing.Size(154, 22);
+            this.toolStripMenuItem112.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem112.Text = "atuação";
             // 
             // toolStripMenuItem113
@@ -385,7 +392,7 @@
             this.toolStripMenuItem119,
             this.toolStripMenuItem120});
             this.toolStripMenuItem118.Name = "toolStripMenuItem118";
-            this.toolStripMenuItem118.Size = new System.Drawing.Size(60, 20);
+            this.toolStripMenuItem118.Size = new System.Drawing.Size(60, 30);
             this.toolStripMenuItem118.Text = "Suporte";
             // 
             // toolStripMenuItem119
@@ -400,15 +407,6 @@
             this.toolStripMenuItem120.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem120.Text = "fedback";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Location = new System.Drawing.Point(-42, 138);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(893, 50);
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
-            // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.White;
@@ -418,24 +416,71 @@
             this.pictureBox3.TabIndex = 10;
             this.pictureBox3.TabStop = false;
             // 
+            // financeiroToolStripMenuItem
+            // 
+            this.financeiroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ordensParaFaturaçãoToolStripMenuItem,
+            this.ordensFaturadasToolStripMenuItem,
+            this.cancelamentoOrdensIntegradasAoFinanceiroToolStripMenuItem});
+            this.financeiroToolStripMenuItem.Name = "financeiroToolStripMenuItem";
+            this.financeiroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.financeiroToolStripMenuItem.Text = "financeiro";
+            // 
+            // ordensParaFaturaçãoToolStripMenuItem
+            // 
+            this.ordensParaFaturaçãoToolStripMenuItem.Name = "ordensParaFaturaçãoToolStripMenuItem";
+            this.ordensParaFaturaçãoToolStripMenuItem.Size = new System.Drawing.Size(318, 22);
+            this.ordensParaFaturaçãoToolStripMenuItem.Text = "ordens para  faturação";
+            // 
+            // ordensFaturadasToolStripMenuItem
+            // 
+            this.ordensFaturadasToolStripMenuItem.Name = "ordensFaturadasToolStripMenuItem";
+            this.ordensFaturadasToolStripMenuItem.Size = new System.Drawing.Size(318, 22);
+            this.ordensFaturadasToolStripMenuItem.Text = "ordens faturadas";
+            // 
+            // cancelamentoOrdensIntegradasAoFinanceiroToolStripMenuItem
+            // 
+            this.cancelamentoOrdensIntegradasAoFinanceiroToolStripMenuItem.Name = "cancelamentoOrdensIntegradasAoFinanceiroToolStripMenuItem";
+            this.cancelamentoOrdensIntegradasAoFinanceiroToolStripMenuItem.Size = new System.Drawing.Size(318, 22);
+            this.cancelamentoOrdensIntegradasAoFinanceiroToolStripMenuItem.Text = "cancelamento ordens integradas ao financeiro";
+            // 
+            // consulta
+            // 
+            this.consulta.Location = new System.Drawing.Point(4, 24);
+            this.consulta.Name = "consulta";
+            this.consulta.Padding = new System.Windows.Forms.Padding(3);
+            this.consulta.Size = new System.Drawing.Size(885, 354);
+            this.consulta.TabIndex = 0;
+            this.consulta.Text = "consulta o.s";
+            this.consulta.UseVisualStyleBackColor = true;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.consulta);
+            this.tabControl1.Location = new System.Drawing.Point(0, 78);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(893, 382);
+            this.tabControl1.TabIndex = 11;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(893, 483);
+            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip3);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "Form2";
             this.Text = "h";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip3.ResumeLayout(false);
             this.menuStrip3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -524,7 +569,12 @@
         private ToolStripMenuItem toolStripMenuItem118;
         private ToolStripMenuItem toolStripMenuItem119;
         private ToolStripMenuItem toolStripMenuItem120;
-        private PictureBox pictureBox2;
         private PictureBox pictureBox3;
+        private ToolStripMenuItem financeiroToolStripMenuItem;
+        private ToolStripMenuItem ordensParaFaturaçãoToolStripMenuItem;
+        private ToolStripMenuItem ordensFaturadasToolStripMenuItem;
+        private ToolStripMenuItem cancelamentoOrdensIntegradasAoFinanceiroToolStripMenuItem;
+        private TabPage consulta;
+        private TabControl tabControl1;
     }
 }
