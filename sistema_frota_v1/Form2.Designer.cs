@@ -31,9 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.menuStrip3 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem81 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem82 = new System.Windows.Forms.ToolStripMenuItem();
@@ -76,50 +74,34 @@
             this.toolStripMenuItem119 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem120 = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 48);
+            this.pictureBox1.Location = new System.Drawing.Point(-9, 75);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(895, 465);
+            this.pictureBox1.Size = new System.Drawing.Size(912, 438);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.BackColor = System.Drawing.Color.White;
-            this.menuStrip1.Location = new System.Drawing.Point(0, 24);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip1.Size = new System.Drawing.Size(893, 24);
-            this.menuStrip1.TabIndex = 5;
-            this.menuStrip1.Text = "menuStrip1";
             // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // menuStrip2
-            // 
-            this.menuStrip2.BackColor = System.Drawing.Color.White;
-            this.menuStrip2.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip2.Size = new System.Drawing.Size(893, 24);
-            this.menuStrip2.TabIndex = 7;
-            this.menuStrip2.Text = "menuStrip2";
-            // 
             // menuStrip3
             // 
+            this.menuStrip3.AutoSize = false;
             this.menuStrip3.BackColor = System.Drawing.Color.White;
+            this.menuStrip3.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem81,
             this.toolStripMenuItem100,
@@ -140,6 +122,7 @@
             this.toolStripMenuItem81.Name = "toolStripMenuItem81";
             this.toolStripMenuItem81.Size = new System.Drawing.Size(120, 20);
             this.toolStripMenuItem81.Text = "Empresa/Prefeitura";
+            this.toolStripMenuItem81.Click += new System.EventHandler(this.toolStripMenuItem81_Click);
             // 
             // toolStripMenuItem82
             // 
@@ -287,7 +270,7 @@
             this.toolStripMenuItem106,
             this.toolStripMenuItem107});
             this.toolStripMenuItem101.Name = "toolStripMenuItem101";
-            this.toolStripMenuItem101.Size = new System.Drawing.Size(166, 22);
+            this.toolStripMenuItem101.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem101.Text = "ordens de serviço";
             // 
             // toolStripMenuItem102
@@ -334,7 +317,7 @@
             this.toolStripMenuItem111,
             this.toolStripMenuItem112});
             this.toolStripMenuItem108.Name = "toolStripMenuItem108";
-            this.toolStripMenuItem108.Size = new System.Drawing.Size(166, 22);
+            this.toolStripMenuItem108.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem108.Text = "credenciamento";
             // 
             // toolStripMenuItem109
@@ -369,7 +352,7 @@
             this.toolStripMenuItem116,
             this.toolStripMenuItem117});
             this.toolStripMenuItem113.Name = "toolStripMenuItem113";
-            this.toolStripMenuItem113.Size = new System.Drawing.Size(166, 22);
+            this.toolStripMenuItem113.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem113.Text = "administrador";
             // 
             // toolStripMenuItem114
@@ -408,13 +391,13 @@
             // toolStripMenuItem119
             // 
             this.toolStripMenuItem119.Name = "toolStripMenuItem119";
-            this.toolStripMenuItem119.Size = new System.Drawing.Size(161, 22);
+            this.toolStripMenuItem119.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem119.Text = "recuperar  senha";
             // 
             // toolStripMenuItem120
             // 
             this.toolStripMenuItem120.Name = "toolStripMenuItem120";
-            this.toolStripMenuItem120.Size = new System.Drawing.Size(161, 22);
+            this.toolStripMenuItem120.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem120.Text = "fedback";
             // 
             // pictureBox2
@@ -426,6 +409,15 @@
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.White;
+            this.pictureBox3.Location = new System.Drawing.Point(-9, -5);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(912, 77);
+            this.pictureBox3.TabIndex = 10;
+            this.pictureBox3.TabStop = false;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -435,8 +427,7 @@
             this.Controls.Add(this.menuStrip3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.menuStrip2);
+            this.Controls.Add(this.pictureBox3);
             this.Name = "Form2";
             this.Text = "h";
             this.Load += new System.EventHandler(this.Form2_Load);
@@ -444,14 +435,12 @@
             this.menuStrip3.ResumeLayout(false);
             this.menuStrip3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private MenuStrip menuStrip1;
         private ToolStripMenuItem empresaPrefeituraToolStripMenuItem;
         private ToolStripMenuItem manutençãoToolStripMenuItem;
         private ToolStripMenuItem suporteToolStripMenuItem;
@@ -494,7 +483,6 @@
         private ToolStripMenuItem vincularFuncionarioToolStripMenuItem;
         private ToolStripMenuItem tiposToolStripMenuItem;
         private ContextMenuStrip contextMenuStrip1;
-        private MenuStrip menuStrip2;
         private MenuStrip menuStrip3;
         private ToolStripMenuItem toolStripMenuItem81;
         private ToolStripMenuItem toolStripMenuItem82;
@@ -537,5 +525,6 @@
         private ToolStripMenuItem toolStripMenuItem119;
         private ToolStripMenuItem toolStripMenuItem120;
         private PictureBox pictureBox2;
+        private PictureBox pictureBox3;
     }
 }
