@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -43,7 +41,6 @@
             this.Nome_usuario = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.sidebartimer = new System.Windows.Forms.Timer(this.components);
             this.sidebar.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -52,11 +49,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // sidebar
             // 
@@ -67,6 +59,8 @@
             this.sidebar.Controls.Add(this.panel3);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
+            this.sidebar.MaximumSize = new System.Drawing.Size(291, 388);
+            this.sidebar.MinimumSize = new System.Drawing.Size(10, 388);
             this.sidebar.Name = "sidebar";
             this.sidebar.Size = new System.Drawing.Size(291, 388);
             this.sidebar.TabIndex = 1;
@@ -210,10 +204,6 @@
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
             // 
-            // sidebartimer
-            // 
-            this.sidebartimer.Tick += new System.EventHandler(this.sidebartimer_tiker);
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -278,7 +268,6 @@
         private ToolStripMenuItem cadastrarFuncionarioToolStripMenuItem;
         private ToolStripMenuItem vincularFuncionarioToolStripMenuItem;
         private ToolStripMenuItem tiposToolStripMenuItem;
-        private ContextMenuStrip contextMenuStrip1;
         private FlowLayoutPanel sidebar;
         private Panel panel2;
         private Panel panel1;
@@ -292,6 +281,5 @@
         private Label Nome_usuario;
         private Label label2;
         private PictureBox pictureBox2;
-        private System.Windows.Forms.Timer sidebartimer;
     }
 }

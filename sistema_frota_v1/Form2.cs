@@ -20,8 +20,7 @@ namespace sistema_frota_v1
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            if (sidebarExpand)
-
+            
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -102,6 +101,11 @@ namespace sistema_frota_v1
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+           
         }
     }
 }
