@@ -63,8 +63,8 @@
             this.sidebar.BackColor = System.Drawing.Color.White;
             this.sidebar.Controls.Add(this.panel2);
             this.sidebar.Controls.Add(this.panel1);
-            this.sidebar.Controls.Add(this.panel3);
             this.sidebar.Controls.Add(this.panel4);
+            this.sidebar.Controls.Add(this.panel3);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
             this.sidebar.Name = "sidebar";
@@ -74,22 +74,21 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.Nome_usuario);
             this.panel2.Controls.Add(this.boas_vindas);
-            this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(287, 154);
+            this.panel2.Size = new System.Drawing.Size(287, 146);
             this.panel2.TabIndex = 4;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.Manutenção);
-            this.panel1.Location = new System.Drawing.Point(3, 163);
+            this.panel1.Location = new System.Drawing.Point(3, 155);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(287, 30);
+            this.panel1.Size = new System.Drawing.Size(287, 22);
             this.panel1.TabIndex = 4;
             // 
             // Manutenção
@@ -99,21 +98,22 @@
             this.Manutenção.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.Manutenção.Image = global::sistema_frota_v1.Properties.Resources.icons8_manutenção_28;
             this.Manutenção.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Manutenção.Location = new System.Drawing.Point(-9, -8);
+            this.Manutenção.Location = new System.Drawing.Point(-9, -9);
             this.Manutenção.Name = "Manutenção";
             this.Manutenção.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.Manutenção.Size = new System.Drawing.Size(302, 47);
+            this.Manutenção.Size = new System.Drawing.Size(311, 39);
             this.Manutenção.TabIndex = 3;
             this.Manutenção.Text = "          Manutenção";
             this.Manutenção.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Manutenção.UseVisualStyleBackColor = false;
+            this.Manutenção.Click += new System.EventHandler(this.Manutenção_Click);
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.empresa_prefeitura);
-            this.panel3.Location = new System.Drawing.Point(3, 199);
+            this.panel3.Location = new System.Drawing.Point(3, 211);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(287, 30);
+            this.panel3.Size = new System.Drawing.Size(287, 22);
             this.panel3.TabIndex = 5;
             // 
             // empresa_prefeitura
@@ -126,7 +126,7 @@
             this.empresa_prefeitura.Location = new System.Drawing.Point(-9, -8);
             this.empresa_prefeitura.Name = "empresa_prefeitura";
             this.empresa_prefeitura.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.empresa_prefeitura.Size = new System.Drawing.Size(302, 47);
+            this.empresa_prefeitura.Size = new System.Drawing.Size(302, 38);
             this.empresa_prefeitura.TabIndex = 3;
             this.empresa_prefeitura.Text = "          Empresa/Prefeitura";
             this.empresa_prefeitura.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -135,9 +135,9 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.suporte);
-            this.panel4.Location = new System.Drawing.Point(3, 235);
+            this.panel4.Location = new System.Drawing.Point(3, 183);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(287, 30);
+            this.panel4.Size = new System.Drawing.Size(287, 22);
             this.panel4.TabIndex = 5;
             // 
             // suporte
@@ -150,7 +150,7 @@
             this.suporte.Location = new System.Drawing.Point(-9, -8);
             this.suporte.Name = "suporte";
             this.suporte.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.suporte.Size = new System.Drawing.Size(302, 47);
+            this.suporte.Size = new System.Drawing.Size(302, 38);
             this.suporte.TabIndex = 3;
             this.suporte.Text = "          Suporte";
             this.suporte.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -159,9 +159,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::sistema_frota_v1.Properties.Resources.icons8_x_48;
-            this.pictureBox1.Location = new System.Drawing.Point(9, 9);
+            this.pictureBox1.Location = new System.Drawing.Point(9, 19);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(29, 25);
+            this.pictureBox1.Size = new System.Drawing.Size(28, 21);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -172,7 +172,7 @@
             this.boas_vindas.AutoSize = true;
             this.boas_vindas.Font = new System.Drawing.Font("Segoe MDL2 Assets", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.boas_vindas.ForeColor = System.Drawing.Color.Red;
-            this.boas_vindas.Location = new System.Drawing.Point(9, 68);
+            this.boas_vindas.Location = new System.Drawing.Point(9, 59);
             this.boas_vindas.Name = "boas_vindas";
             this.boas_vindas.Size = new System.Drawing.Size(46, 29);
             this.boas_vindas.TabIndex = 2;
@@ -182,7 +182,7 @@
             // Nome_usuario
             // 
             this.Nome_usuario.AutoSize = true;
-            this.Nome_usuario.Location = new System.Drawing.Point(9, 112);
+            this.Nome_usuario.Location = new System.Drawing.Point(9, 100);
             this.Nome_usuario.Name = "Nome_usuario";
             this.Nome_usuario.Size = new System.Drawing.Size(88, 15);
             this.Nome_usuario.TabIndex = 2;
@@ -195,7 +195,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(39, 9);
+            this.label2.Location = new System.Drawing.Point(384, 115);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(244, 12);
             this.label2.TabIndex = 4;
@@ -204,7 +204,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::sistema_frota_v1.Properties.Resources.icons8_waving_hand_emoji_28;
-            this.pictureBox2.Location = new System.Drawing.Point(51, 68);
+            this.pictureBox2.Location = new System.Drawing.Point(46, 59);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(31, 29);
             this.pictureBox2.TabIndex = 5;
@@ -220,6 +220,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(870, 388);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.sidebar);
             this.Name = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
@@ -232,6 +233,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
